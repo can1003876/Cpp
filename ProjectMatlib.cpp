@@ -62,8 +62,8 @@ cout << transpose(B(1).toInt());	// B = A^T.toInt()
 //B-1column^T = (0, 4, 7)
 
 // Code listing 3 (lines 64 to 72):
-TMatrix<double> C(RandomGauss<double>(5e3, 1e3, 0.0, 3.0), "C");
-TMatrix<double> D(RandomGauss<double>(5e3, 1e3, 0.0, 3.0), "D");
+TMatrix<double> C(RandomGauss<double>(5e3, 5e3, 0.0, 3.0), "C");
+TMatrix<double> D(RandomGauss<double>(5e3, 5e3, 0.0, 3.0), "D");
 clock_t start = clock ();
 C = C+D;	// It took: 0.317092 sec.
 printf("It took: %Lf sec.\n", (long double) (clock() - start)/ CLOCKS_PER_SEC );
